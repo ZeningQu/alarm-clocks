@@ -29,11 +29,11 @@ schedule.every().day.at("13:00").do(ring) # iron, vc, dinner, dishes, brush, flo
 schedule.every().day.at("13:40").do(ring) # L8 (45 min)
 schedule.every().day.at("14:25").do(ring) # break (10 min)
 schedule.every().day.at("14:35").do(ring) # L9 (45 min)
-schedule.every().day.at("15:20").do(ring) # break (10 min)
-schedule.every().day.at("15:30").do(ring) # L10 (45 min)
-schedule.every().day.at("16:15").do(ring) # walk (1 hr)
-schedule.every().day.at("17:15").do(ring) # shower, cream (45 min)
-schedule.every().day.at("18:00").do(ring) # read (1 hr)
+schedule.every().day.at("15:20").do(ring) # walk (1 hr 30 min)
+schedule.every().day.at("16:50").do(ring) # shower, cream (45 min)
+schedule.every().day.at("17:35").do(ring) # L10 (45 min)
+schedule.every().day.at("18:20").do(ring) # break (10 min)
+schedule.every().day.at("18:30").do(ring) # read (30 min)
 schedule.every().day.at("19:00").do(ring) # sleep, Bible (8 hr)
 
 while True:
