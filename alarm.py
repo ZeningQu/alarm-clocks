@@ -5,68 +5,41 @@ import time
 def ring():
   playsound('./sounds/bell.mp3')
 
-# summer
-# schedule.every().day.at("03:00").do(ring) # wake up, iron, vc, cook breakfast (45 min)
-# schedule.every().day.at("03:45").do(ring) # quiet time (30 min)
-# schedule.every().day.at("04:15").do(ring) # pray (20 min)
-# schedule.every().day.at("04:35").do(ring) # brush, floss, trays (20 min)
-# schedule.every().day.at("04:55").do(ring) # panda daily (10 min)
-# schedule.every().day.at("05:05").do(ring) # L1 (45 min)
-# schedule.every().day.at("05:50").do(ring) # break (10 min)
-# schedule.every().day.at("06:00").do(ring) # L2 (45 min)
-# schedule.every().day.at("06:45").do(ring) # break (10 min)
-# schedule.every().day.at("06:55").do(ring) # L3 (45 min)
-# schedule.every().day.at("07:40").do(ring) # break (10 min)
-# schedule.every().day.at("07:50").do(ring) # L4 (45 min)
-# schedule.every().day.at("08:35").do(ring) # cook, lunch, brush, floss, trays, dishes (1 hr)
-# schedule.every().day.at("09:35").do(ring) # nap, Bible (45 min)
-# schedule.every().day.at("10:20").do(ring) # wake up, shower (20 min)
-# schedule.every().day.at("10:40").do(ring) # L5 (45 min)
-# schedule.every().day.at("11:25").do(ring) # break (10 min)
-# schedule.every().day.at("11:35").do(ring) # L6 (45 min)
-# schedule.every().day.at("12:20").do(ring) # break (10 min)
-# schedule.every().day.at("12:30").do(ring) # L7 (45 min)
-# schedule.every().day.at("13:15").do(ring) # dinner, dishes, brush, floss, trays, meal prep (1 hr)
-# schedule.every().day.at("14:15").do(ring) # L8 (45 min)
-# schedule.every().day.at("15:00").do(ring) # break (10 min)
-# schedule.every().day.at("15:10").do(ring) # L9 (45 min)
-# schedule.every().day.at("15:55").do(ring) # walk (1 hr)
-# schedule.every().day.at("16:55").do(ring) # shower, cream (45 min)
-# schedule.every().day.at("17:40").do(ring) # L10 (45 min)
-# schedule.every().day.at("18:25").do(ring) # break (5 min)
-# schedule.every().day.at("18:30").do(ring) # read (30 min)
-# schedule.every().day.at("19:00").do(ring) # sleep, Bible (8 hr)
+alarms = [
+"03:00",
+"03:10",
+"04:10",
+"04:40",
+"05:40",
+"05:45",
+"06:30",
+"06:40",
+"07:25",
+"07:35",
+"08:20",
+"08:30",
+"09:15",
+"09:25",
+"10:10",
+"11:10",
+"11:30",
+"11:35",
+"12:20",
+"12:30",
+"13:15",
+"13:25",
+"14:10",
+"14:20",
+"15:05",
+"15:15",
+"16:00",
+"16:30",
+"18:00",
+"19:00"
+]
 
-# winter
-schedule.every().day.at("03:00").do(ring) # wake up, tea (5 min)
-schedule.every().day.at("03:05").do(ring) # quiet time (60 min)
-schedule.every().day.at("04:05").do(ring) # pray (30 min)
-schedule.every().day.at("04:35").do(ring) # breakfast, brush, floss, trays, face, dress, hair (1 hr)
-schedule.every().day.at("05:35").do(ring) # panda daily (5 min)
-schedule.every().day.at("05:40").do(ring) # L1 (45 min)
-schedule.every().day.at("06:25").do(ring) # break (10 min)
-schedule.every().day.at("06:35").do(ring) # L2 (45 min)
-schedule.every().day.at("07:20").do(ring) # break (10 min)
-schedule.every().day.at("07:30").do(ring) # L3 (45 min)
-schedule.every().day.at("08:15").do(ring) # break (10 min)
-schedule.every().day.at("08:25").do(ring) # L4 (45 min)
-schedule.every().day.at("09:10").do(ring) # break (10 min)
-schedule.every().day.at("09:20").do(ring) # L5 (45 min)
-schedule.every().day.at("10:05").do(ring) # cook, lunch, trays (1 hr)
-schedule.every().day.at("11:05").do(ring) # walk (1.5 hr)
-schedule.every().day.at("12:35").do(ring) # shower, cream (45 min)
-schedule.every().day.at("13:20").do(ring) # L6 (45 min)
-schedule.every().day.at("14:05").do(ring) # break (10 min)
-schedule.every().day.at("14:15").do(ring) # L7 (45 min)
-schedule.every().day.at("15:00").do(ring) # break (10 min)
-schedule.every().day.at("15:10").do(ring) # L8 (45 min)
-schedule.every().day.at("15:55").do(ring) # break (10 min)
-schedule.every().day.at("16:05").do(ring) # L9 (45 min)
-schedule.every().day.at("16:50").do(ring) # break (10 min)
-schedule.every().day.at("17:00").do(ring) # L10 (45 min)
-schedule.every().day.at("15:55").do(ring) # walk (1 hr)
-schedule.every().day.at("17:45").do(ring) # dinner, iron, vc, trays, face, cream, meal prep (1 hr)
-schedule.every().day.at("18:45").do(ring) # sleep, Bible (8 hr)
+for a in alarms:
+  schedule.every().day.at(a).do(ring)
 
 while True:
   schedule.run_pending()
