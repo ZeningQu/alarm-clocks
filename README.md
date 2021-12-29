@@ -1,13 +1,12 @@
-# Multiple Alarms Clocks
+# High School Bells
 
-So that you can be as productive as in high school or colleage (whichever was more productive for you).
-
-Plays a bell sound when an alarm goes off.
-
-Set your own schedule in [alarm.py](https://github.com/ZeningQu/alarm-clock/blob/master/alarm.py#L8)
+Define your own schedule [alarm.py](https://github.com/ZeningQu/alarm-clock/blob/master/alarm.py#L8) and start your productive day! A bell will ring for each time you provided.
 
 **Install:**
 `pip3 install playsound schedule`
 
 **Run:**
-`python3 alarm.py`
+
+`python3 alarm.py` to start your daily schedule
+
+`python3 now.py` to start a 45 min work / 10 min break Pomodoro timer
