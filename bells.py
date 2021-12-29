@@ -5,7 +5,7 @@ import time
 def ring():
   playsound('./sounds/bell.mp3')
 
-alarms = [
+time = [
 "03:00",
 "03:10",
 "04:10",
@@ -38,8 +38,8 @@ alarms = [
 "19:00"
 ]
 
-for a in alarms:
-  schedule.every().day.at(a).do(ring)
+for t in time:
+  schedule.every().day.at(t).do(ring)
 
 while True:
   schedule.run_pending()
