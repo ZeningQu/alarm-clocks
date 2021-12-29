@@ -1,6 +1,6 @@
 # High School Bells
 
-Define your own [bell schedule](https://github.com/ZeningQu/alarm-clock/blob/master/alarm.py#L8) and start your productive day! Bells will ring at the time you provided.
+Define your [bell schedule](https://github.com/ZeningQu/bells/blob/51d098eb455219cbf06c24afc6b8ca148cca5745/bells.py#L8) and enjoy your productive day! Bells will ring at the `time[]` you provided.
 
 **Install:**
 `pip3 install playsound schedule`
@@ -9,4 +9,4 @@ Define your own [bell schedule](https://github.com/ZeningQu/alarm-clock/blob/mas
 
 `python3 bells.py` to start your bell schedule
 
-`python3 now.py` to start a 45 min work / 10 min break Pomodoro timer
+`python3 timer.py` to start a 45 min work / 10 min break Pomodoro timer -- work starts immediately :D
