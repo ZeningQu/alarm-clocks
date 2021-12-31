@@ -10,8 +10,10 @@ WORK = 45
 BREAK = 10
 
 while True:
+  print('Focus time!')
   ring()
   time.sleep(WORK*60)
 
+  print('Take a break :)')
   ring()
   time.sleep(BREAK*60)
